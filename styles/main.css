@@ -1,0 +1,352 @@
+/* -------------------------------------------
+Style Sheet for the CCHS Assasins Game
+
+author: Julian Henry
+
+version: 1.0
+
+email: jhenry19@concordcarlisle.org
+------------------------------------------- */
+
+
+.heading {
+    width: 55%;
+    margin-top: 10px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 80px;
+    /*    color: #ff0000;*/
+    color: #BF4242;
+    /*    text-shadow: 2px 2px #665e5f;*/
+}
+
+center span {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 20px;
+    color: #f5f5f5;
+}
+
+form span {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 16px;
+    color: red;
+}
+
+
+
+.main-text {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 26px;
+    color: #f5f5f5;
+    width: 70%;
+
+
+}
+
+#assassin-record-text {
+    color: #f5f5f5;
+}
+
+.personalized-content-header {
+    margin-left: 25%;
+    margin-bottom: 7px;
+    float: left;
+}
+
+.personalized-content {
+    margin-right: 25%;
+    margin-bottom: 7px;
+    float: right;
+}
+
+#warning {
+    font-family: sans-serif;
+    font-size: 29px;
+    color: #f48642;
+    width: 70%;
+}
+
+
+.info-box ul {
+    color: #f5f5f5;
+    text-align: left;
+    width: 70%;
+    list-style-type: square;
+}
+
+.info-box li {
+    display: list-item;
+}
+
+.info-box {
+    width: 90%;
+    height: auto;
+    display: block;
+
+}
+
+
+.info-header {
+    font-size: 40px;
+    float: left;
+    font-family: 'Comfortaa', sans-serif;
+    color: #BF4242;
+    padding-bottom: 5px;
+}
+
+.info-text {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    width: 80%;
+    text-align: left;
+    font-family: 'Oxygen', sans-serif;
+    color: #f5f5f5;
+}
+
+#home-logo {
+    width: 40vw;
+    height: auto;
+    position: static;
+    margin: 10px;
+    /*    margin-left: 30vw;*/
+    /*    margin-right:auto;*/
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    width: 9vw;
+    height: auto;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    width: auto;
+    padding-top: 25px;
+}
+
+li a {
+
+    text-decoration: none;
+    color: #8a8e93;
+
+    border-top: 5px solid transparent;
+    /*elements won't shift when the border is added */
+    font-size: 20px;
+
+}
+
+li a:active {
+    color: #8a8e93;
+    border-top: 3px solid #f5f5f5;
+
+}
+
+li a:hover {
+    color: #8BB7FA;
+    border-color: #f5f5f5;
+    /*    border: 1px solid*/
+}
+
+.signup-link {
+    color: #457B9D;
+}
+
+.signup-link:hover {
+    text-decoration-line: none;
+    color: #1D3557;
+}
+
+g-signin2 {
+    width: 100%;
+    height: auto;
+}
+
+table {
+    margin: 15px;
+}
+
+th:first-child: hover {
+    cursor: default;
+}
+
+th {
+    width: 20%;
+    padding-left: 50px;
+    background-color: #8a8e93;
+    cursor: pointer;
+
+}
+
+tr {
+    background-color: #8a8e93;
+    height: 40px;
+}
+
+/*A line at the bottom of the headers*/
+tr:first-child {
+    border-bottom: solid black 1px;
+}
+
+/*The curser remains the same when hovering over the name atribute*/
+
+
+/*alternates color to make the table easier to look at*/
+tr:nth-child(even) {
+    background-color: aliceblue;
+}
+
+/*highlights the row the user is hovering over*/
+tr:hover {
+    background-color: #BF4242;
+    color: #171c28;
+}
+
+td {
+    padding-left: 15px;
+    border-right: solid black 1px;
+    font-family: 'Oxygen', sans-serif;
+
+}
+
+
+
+/* Change styles for mobile screens */
+
+@media screen and (max-width: 425px) {
+    .heading {
+        width: 95%;
+        margin-top: 5px;
+        font-size: 60px;
+    }
+
+    .main-text {
+        font-size: 18px;
+    }
+
+    #warning {
+        font-size: 14px;
+    }
+
+    .info-box {
+        width: 90%;
+        height: auto;
+    }
+
+
+    .info-header {
+        font-size: 24px;
+    }
+
+    .info-text {
+        font-size: 16px;
+        width: 90%;
+        font-family: 'Oxygen', sans-serif;
+    }
+
+    .personalized-content-header {
+        margin-left: 25%;
+        margin-bottom: 7px;
+        float: left;
+    }
+
+    .personalized-content {
+        margin-right: 25%;
+        margin-bottom: 7px;
+        float: right;
+    }
+
+    #home-logo {
+        width: 60vw;
+        height: auto;
+        position: static;
+        margin: 10px;
+        /*    margin-left: 30vw;*/
+        /*    margin-right:auto;*/
+    }
+
+    .logo {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 9vw;
+        height: auto;
+    }
+
+    li {
+        display: inline-block;
+        width: auto;
+        padding-top: 15px;
+    }
+
+    li a {
+
+        text-decoration: none;
+        color: #8a8e93;
+
+        border-top: 2px solid transparent;
+        /*elements won't shift when the border is added */
+        font-size: 20px;
+
+    }
+
+
+    g-signin2 {
+        width: 50%;
+        height: auto;
+
+    }
+
+    table {
+        margin: 15px;
+    }
+
+    th:first-child: hover {
+        cursor: default;
+    }
+
+    th {
+        width: 20%;
+        padding-left: 50px;
+        background-color: #8a8e93;
+        cursor: pointer;
+
+    }
+
+    tr {
+        background-color: #8a8e93;
+        height: 40px;
+    }
+
+    /*A line at the bottom of the headers*/
+    tr:first-child {
+        border-bottom: solid black 1px;
+    }
+
+    /*The curser remains the same when hovering over the name atribute*/
+
+
+    /*alternates color to make the table easier to look at*/
+    tr:nth-child(odd) {
+        background-color: aliceblue;
+    }
+
+    /*highlights the row the user is hovering over*/
+    tr:hover {
+        background-color: #BF4242;
+        color: #171c28;
+    }
+
+    td {
+        padding-left: 15px;
+        border-right: solid black 1px;
+        font-family: 'Oxygen', sans-serif;
+
+    }
