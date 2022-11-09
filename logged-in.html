@@ -1,0 +1,92 @@
+<DOCTYPE html>
+    <html lang="en-US">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Julian Henry">
+        <title>Assassins</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="Icon.ico">
+        <link rel="stylesheet" href="styles/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa:600|Oxygen" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
+
+    <body style="background-color: #171c28;">
+        <a href="index.html">
+            <img class="logo" src='images/logo.png' alt='Assasssins Logo'>
+        </a>
+        
+
+        <center>
+
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="info.html">Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+
+            <span class="heading">Logged In</span>
+            <br>
+            <span class="main-text">Hello <span id="name">Loading...</span>, welcome to your assassins account</span>
+            <br>
+
+        
+            <br>
+            <div class="spinner-border text-danger" id="loading-spinner" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <br>
+            <br>
+            <span class="personalized-content-header">ID number:</span>
+            <span class="personalized-content" id="id-number">Loading...</span>
+            <br>
+            <br>
+            <span class="personalized-content-header">Current Target:</span>
+            <span class="personalized-content" id="current-target">Loading...</span>
+            <br>
+            <br>
+            <span class="personalized-content-header">Alive:</span>
+            <span class="personalized-content" id="alive">Loading...</span>
+            <br>
+            <br>
+            <span class="personalized-content-header">Total Eliminations:</span>
+            <span class="personalized-content" id="total-eliminations">Loading...</span>
+            <br>
+            <br>
+            <span class="personalized-content-header">Round Eliminations:</span>
+            <span class="personalized-content" id="round-eliminations">Loading...</span>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="main-text">Upon a successful elimination, enter your target's id number below:</div>
+            <br>
+            <form id="target-form" action="javascript:;" onsubmit="checkForElimination(this)" class="form-inline justify-content-center" autocomplete="off">
+                <label for="targetID" class="mb-2 mr-sm-2" id="assassin-record-text">Target's ID:</label>
+                <input type="text" class="form-control mb-2 mr-sm-2" id="targetID" placeholder="Enter target's player ID" name="targetID">
+                <br>
+                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+<!--                onclick="javascript:checkForElimination()" -->
+                <br>
+            </form>
+        </center>
+        
+        <script src="scripts/main.js"></script>
+    </body>
+
+    </html>

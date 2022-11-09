@@ -1,0 +1,71 @@
+<DOCTYPE html>
+    <html lang="en-US">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Julian Henry">
+        <title>Assassins</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="Icon.ico">
+        <link rel="stylesheet" href="styles/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa:600|Oxygen" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <meta name="google-signin-scope" content="profile email">
+        <meta name="google-signin-client_id" content="905325299649-j942p9r6vlmc3ekjj7tvais9p7hlt1u9.apps.googleusercontent.com">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+    </head>
+
+    <body style="background-color: #171c28;">
+        <a href="index.html">
+            <img class="logo" src='images/logo.png' alt='Assasssins Logo'>
+        </a>
+        <center>
+
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="info.html">Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+
+            <div id="login-container">
+                <div class="heading">Login</div>
+                <div class="main-text">Login to view your information</div>
+                <br>
+                <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+                <script>
+                    // function is run on a successful login by the user
+                    function onSignIn(googleUser) {
+                    
+                        // Useful data for your client-side scripts:
+                        var profile = googleUser.getBasicProfile();
+                       
+                        // The ID token you need to pass to your backend:
+                        var id_token = googleUser.getAuthResponse().id_token;
+                    
+
+                        //stores the token for use on the logged-in screen
+                        localStorage.setItem("idToken", id_token);
+
+                        window.location.href = "logged-in.html";
+                    }
+                
+
+                </script>
+            </div>
+        </center>
+
+
+
+
+
+    </body>
+    <html>

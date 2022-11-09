@@ -1,0 +1,62 @@
+<DOCTYPE html>
+    <html lang="en-US">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Julian Henry">
+        <title>Assassins</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="Icon.ico">
+        <link rel="stylesheet" href="styles/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa:600|Oxygen" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
+
+    <body style="background-color: #171c28;">
+        <a href="index.html">
+            <img class="logo" src='images/logo.png' alt='Assasssins Logo'>
+        </a>
+
+        <center>
+
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="info.html">Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+
+
+
+
+            <span class="heading">Leaderboard</span>
+            <div class="main-text">This table shows the real-time ranking of the game. All players with one round elimination will be displayed on the leaderboard.</div>
+
+            <table id="leaderboard-table">
+                <tr>
+                    <th>Name</th>
+                    <th onclick="sortTable(1)">Round Eliminations</th>
+                    <th onclick="sortTable(2)">Total Eliminations</th>
+                </tr>
+            </table>
+
+
+
+            <div class="spinner-border text-danger" id="loading-spinner" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </center>
+
+        <script src="scripts/leaderboard.js"></script>
+
+    </body>
+
+    </html>
